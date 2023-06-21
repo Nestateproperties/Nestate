@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{partial "head.html" .}}
+
+  <body>
+    <!-- ======= Header ======= -->
+    {{ partial "header.html" .}}
+    <!-- End Header -->
+
+    <main id="main">
+      {{ block "main" . }}
+      <!-- Specific content for the page -->
+      {{ end }}
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    {{ partial "footer.html"}}
+    <!-- End Footer -->
+
+    {{ partial "scripts.html"}}
+  </body>
+</html>
